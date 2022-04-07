@@ -15,3 +15,28 @@ int main() {
   return 0;
 }
 
+void execute_shell_cmd(char *cmd,char *response,int visible)
+{
+	FILE *fp;
+	char cmd_response[ 2048 ];
+   
+	fp = popen( cmd , "r");
+    
+	if ( fp == NULL ) {
+		PR_IMD("Failed to run ( %s )command\n",cmd );
+  	}else{
+    		if ( response != NULL ){
+			*cmd_response = 0;		
+			*response = 0;
+			while ( fgets( cmd_response , 2047 ,  fp ) != NULL  ) {
+		  		( void ) strcat( response , cmd_response );
+			}/*End while*/  
+			
+			if ( visible == 1 ){
+			PR_IMD( "%s" , response );
+			}
+  		}
+		pclose( fp );  
+ 	 }	
+
+}
