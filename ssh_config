@@ -1,0 +1,7 @@
+//creat in ~/.ssh/config
+host hpone
+    Hostname hpone
+    User mikehuang
+    ForwardAgent yes
+    Port 22
+    ProxyCommand ssh mikehuang@10.137.4.1 /bin/nc 192.168.102.237 %p
