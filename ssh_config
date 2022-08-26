@@ -4,4 +4,4 @@ host hpone
     User mikehuang
     ForwardAgent yes
     Port 22
-    ProxyCommand ssh mikehuang@10.137.4.1 /bin/nc 192.168.102.237 %p
+    ProxyCommand ssh mikehuang@XXX.XXX.XX.X /bin/nc XXX.XXX.XX.X %p
