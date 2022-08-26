@@ -7,5 +7,5 @@ TCP/IP(Socket): http://zake7749.github.io/2015/03/17/SocketProgramming/<br />
 V4L2:https://www.cnblogs.com/edver/p/7749628.html?msclkid=7cbda04db64811ecb0eff6609b433561<br />
 TFTP:https://tsaiyuyan.github.io/2020/05/19/linux/ubuntu-an-zhuang-tftp-server/
 TFTP:https://stackoverflow.com/questions/62527961/how-to-fix-nf-conntrack-default-automatic-helper-assignment-has-been-turned-off<br />
-
+ssh keygen : https://blog.gtwang.org/linux/linux-ssh-public-key-authentication/<br />
 
